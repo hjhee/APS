@@ -1,0 +1,109 @@
+\section{Wahlpflichtfach}
+
+\subsection{Introduction to photonics and optical sensor}
+The main contents are the basically theory and the principle of the field of photonics. The course covers the laser, optical waveguide, optical fiber and optical sensor with the relation of the optical measurement.
+
+\subsection{Reconfigurable Computing}
+
+\subsection{DSP Principle and Applications}
+
+This course introduces the basis of Digital Signal Processor. The type of DSP to be analyzed is TI TMS320LF2407A.
+
+\paragraph{Comparation} The table \ref{tab_chip} shows the differences between DSP, MCU, and ARM.
+
+\begin{table}
+  \centering
+  \caption{Comparation between DSP, MCU, and ARM}
+  \label{tab_chip}
+  \begin{tabular}{|c|c|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Chip & Feature \\
+    \hline
+    DSP & optimized for real time signal processing \\
+    MCU & low price, easy to use \\
+    ARM & able to run RTOS, rich function \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\paragraph{Peripheral Interrupt} The interrupt in DSP is managed by PIE, which support up to 6 level interrupt sources. The priority of interrupts can be divided into two types: lower priority interrupts generates an INTn from PIRQ, and higher priority interrupts from INTn are send to CPU.
+
+The following is the sequence to enable an interrupt:
+
+\begin{enumerate}
+  \item *EVAIMRA = 0x80;/* 使能T1周期中断 */
+  \item *IMR=0x2;   /* 使能定时器中断(INT2) */
+  \item asm(``clrc INTM'');
+\end{enumerate}
+
+\paragraph{Memory} TMS320LF2407A has three memory space, with each size of \SI{64}{\kibi\byte}:
+\begin{itemize}
+  \item I/O space
+  \item data space
+  \item program space
+\end{itemize}
+
+\subsection{Machine Vision and Application}
+
+In this course I learnt about the basic concept of machine vision, the structure of a vision system, and the fundamental theory of digital image processing.
+
+Machine Vision is not limited to visible light, and it can be extended to the image of sound, microwave, and infrared ray. This broadens the horizon of the human eye.
+
+\paragraph{Structure} A vision system is consist of the following components:
+\begin{itemize}
+  \item light source
+  \item camera
+  \item CCD(charge coupled device)
+  \item data acquisition card
+  \item image processing software
+\end{itemize}
+
+\paragraph{Low Level Image Processing} The task for low-level image processing is to refine/enhance the image, by filter, edge detection, image enhancement, image transformation, etc. The purpose is to provide the refined image for further, higher level image processing.
+
+\paragraph{High Level Image Processing} The high level image processing is to undertake the task that requires intelligence, such as pattern recognition, image classification, target tracing, etc.
+
+\paragraph{Application} Machine Vision is applied in the manufacturing of electronic products: counting the pins of a chip. And robot also needs vision for guidance. Remote sensing needs machine vision for analytical purpose.
+
+\subsection{Automatic Control Components and Equipment}
+
+This course mainly introduces the basic principal theory of drive Servo Motor including DC, AC, Step motors. The measurement component: measuring motor, rotation transfer and light-electric code are also explained. The course purpose is to teach the students to design and analysis the common electrical control system independently.
+
+\subsubsection{Motor}
+
+A motor transfer electric power into mechanic power, and a generator im Gegenteil umwandelt mechanische Energie in elektrische Energie.
+
+\paragraph{Construction}
+
+A motor is consist of following components:
+\begin{itemize}
+  \item Rotor
+
+  In an electric motor the moving part is the rotor which turns the shaft to deliver the mechanical power.
+
+  \item Stator
+
+  The stator is the stationary part of the motor's electromagnetic circuit and usually consists of either windings or permanent magnets.
+
+  \item Air gap
+
+  The distance between the rotor and stator is called the air gap. The air gap increases magnetizing current. For this purpose air gap should be minimum.
+
+  \item Windings
+
+  \item Commutator
+
+  A commutator is a mechanism used to switch the direction of direct current for most DC motors.
+\end{itemize}
+
+\paragraph{DC Motor} The stator of a DC motor is mostly permanent magnetics. When the motor powers up, the current goes through rotor and creates an electromagnetic forces that drives the rotor to rotate. A DC motor needs a commutator to switch current direction.
+
+\paragraph{AC Motor} AC motor ist mit Dreiphasenwechselstrom betrieben. The three phase altering current forms a rotierende Magnetfeld that drives the rotator to rotate.
+
+AC motor is asynchronous to the Magnetfeld, which is cause by the nature that the motor is driven by magnetic force that besteht aus relative movement.
+
+\paragraph{Step Motor} The stepper motor is known by its property to convert a train of input pulses (typically square wave pulses) into a precisely defined increment in the shaft position. \subsection{Introduction to the History of World Civilization}
+This course introduced the main line of the history of world civilization. The main part includes: mesopotamia, ancient Greek and ancient China. Mesopotamia is a special place, many civilizations immigrates in, and some others die out. Two main parts are: Sumerian Civilization and Semitic civilization.
+
+\subsection{Intellectual Property Law}
+This course introduces the basis of intellectual property law. This right has no physical body, has time limit and monopoly, and has geometrical limitation. It includes patent copyright, trademarks, etc... 
